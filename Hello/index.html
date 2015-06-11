@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>AngularTest</title>
+  <script src="./../node_modules/angular/angular.js"></script>
+  <script src="./script/app.js"></script>
+</head>
+<body ng-app="myApp">
+  <h1>Angularの基礎１</h1>
+  <div ng-controller="HelloController">
+    <h2>{{explain}}</h2>
+    <p>{{word}}</p>
+    <button ng-click="action()">押して</button>
+  </div>
+  <div ng-controller="ByeByeController">
+    <h2>{{explain}}</h2>
+    <p>{{word}}</p>
+    <button ng-click="action()">押して</button>
+  </div>
+  <div ng-controller="RepeatController">
+    <h2>{{explain}}</h2>
+    <input ng-model="word">
+    <p>{{word}}</p>
+    <button ng-click="action()">押して</button>
+  </div>
+</body>
+</html>
