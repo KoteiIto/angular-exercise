@@ -1,7 +1,7 @@
 var myApp = angular.module("myApp",[]);
 
 myApp.controller("TodoController", function($scope){
-  
+
   $scope.items = [];
   $scope.name = "";
 

@@ -2,6 +2,7 @@ var myApp = angular.module("myApp",[]);
 
 //コントラーラ
 myApp.controller("HelloController", function($scope){
+
   //モデル
   $scope.explain = "AngularはフロントサイドMVCフレームワークです。";
   $scope.word = "Hello World";
@@ -12,7 +13,8 @@ myApp.controller("HelloController", function($scope){
 
 //コントラーラ
 myApp.controller("ByeByeController", function($scope){
-  //モデル
+  //遅延サンプル
+  //http://everglades-ng-cloak-demo.herokuapp.com/
   $scope.explain = "コントローラはスコープ内のモデルを参照します。";
   $scope.word = "Bye Bye";
   $scope.action = function(){

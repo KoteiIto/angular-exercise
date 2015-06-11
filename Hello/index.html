@@ -14,8 +14,8 @@
     <button ng-click="action()">押して</button>
   </div>
   <div ng-controller="ByeByeController">
-    <h2>{{explain}}</h2>
-    <p>{{word}}</p>
+    <h2 ng-bind="explain"></h2>
+    <p ng-bind="word"></p>
     <button ng-click="action()">押して</button>
   </div>
   <div ng-controller="RepeatController">

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Watch Test</title>
+  <script src="./../node_modules/angular/angular.js"></script>
+  <script src="./script/app.js"></script>
+</head>
+<body ng-app="myApp">
+  <h1>Angularの基礎2</h1>
+  <div ng-controller="PriceController1">
+    <input ng-model="price1"> + {{price2}} = {{result}}
+    <button ng-click="reset()">リセット</button>
+  </div>
+  <div ng-controller="PriceController2">
+    <input ng-model="price1" ng-change="update()"> + {{price2}} = {{result}}
+    <button ng-click="reset()">リセット</button>
+  </div>
+  <div ng-controller="PriceController3">
+    <input ng-model="price1"> + {{price2}} = {{result}}
+    <button ng-click="reset()">リセット</button>
+  </div>
+</body>
+</html>
