@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Todo</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./../node_modules/angular/angular.js"></script>
+  <script src="./script/app.js"></script>
+</head>
+<body ng-app="myApp">
+  <h1>Todo</h1>
+  <div id="todo" ng-controller="TodoController">
+    <div id="form">
+      <input ng-model="name">
+      <button ng-click="addItem()">登録</button>
+    </div>
+    <div id="list" ng-show="hasItem()">
+      <div class="job" ng-repeat="item in items">
+        <p>{{item.name}}</p>
+        <button ng-click="removeItem($index)">削除</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

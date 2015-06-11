@@ -1,0 +1,43 @@
+#todo{
+  width: 300px;
+  margin: 10px auto;
+}
+
+#form{
+  float: left;
+  width: 300px;
+  height: 50px;
+  margin: 10px auto;
+  overflow: hidden;
+}
+
+#form input{
+  width: 240px;
+  line-height: 20px;
+}
+
+#list{
+  border-top: solid thin silver;
+  border-left: solid thin silver;
+  border-right: solid thin silver;
+  overflow: scroll;
+}
+
+.job{
+  width: 300px;
+  height: 29px;
+  overflow: hidden;
+  border-bottom: solid thin silver;
+}
+
+.job p{
+  width: 240px;
+  text-overflow:ellipsis;
+  -webkit-text-overflow:ellipsis;
+  line-height: 29px;
+  font-size: 14px;
+  margin: 0px;
+  margin-right: 10px;
+  padding: 0px;
+  float: left;
+}
