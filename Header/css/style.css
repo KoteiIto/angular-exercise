@@ -1,0 +1,36 @@
+body{
+  width: 800px;
+  margin: 0px auto;
+}
+
+header{
+  width: 800px;
+  height: 60px;
+  overflow: hidden;
+  border: solid thin silver;
+  margin-bottom: 50px;
+}
+
+header > div{
+  width: 180px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 24px;
+  font-weight: bold;
+  color: silver;
+  text-align: center;
+  float :left;
+  border-right: solid thin silver;
+  cursor: pointer;
+}
+
+.active{
+  background-color: silver;
+  color: white;
+}
+
+.image{
+  width: 400px;
+  height: 400px;
+  float: left;
+}

@@ -1,0 +1,8 @@
+body{
+  width: 600px;
+  margin: 50px auto;
+}
+
+body > div > div{
+  margin-top: 20px;
+}

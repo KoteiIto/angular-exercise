@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Navigation</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./../node_modules/angular/angular.js"></script>
+  <script src="./script/app.js"></script>
+</head>
+<body ng-app="myApp">
+  <header ng-controller="HeaderController">
+    <div class="{{getClass(0)}}" ng-click="activate(0)">
+      HOME
+    </div>
+    <div class="{{getClass(1)}}" ng-click="activate(1)">
+      NEW
+    </div>
+    <div ng-class="getClass(2)" ng-click="activate(2)">
+      CONTENT
+    </div>
+  </header>
+  <section ng-controller="ImageController">
+    <img class="image" src="{{imageUrl}}" alt="image" />
+    <img class="image" ng-src="{{imageUrl}}" alt="image" />
+  </section>
+</body>
+</html>

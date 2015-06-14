@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Navigation</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./../node_modules/angular/angular.js"></script>
+  <script src="./script/app.js"></script>
+</head>
+<body ng-app="myApp">
+  <div ng-controller="ParentController">
+    <span>Parent: </span>
+    <span>{{foo}}</span>
+    <button ng-click="change()">change</button>
+    <div ng-controller="ChildController1">
+      <span>Child1: </span>
+      <span>{{foo}}</span>
+      <button ng-click="change()">change</button>
+    </div>
+    <div ng-controller="ChildController2">
+      <span>Child2: </span>
+      <span>{{foo}}</span>
+      <button ng-click="change()">change</button>
+    </div>
+    <div ng-controller="ChildController3">
+      <span>Child3: </span>
+      <span>{{foo}}</span>
+      <button ng-click="change()">change</button>
+    </div>
+    <div ng-controller="ChildController4">
+      <span>Child4: </span>
+      <span>{{foo}}</span>
+      <button ng-click="change()">change</button>
+    </div>
+  </div>
+</body>
+</html>
