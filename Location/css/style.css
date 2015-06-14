@@ -1,0 +1,96 @@
+body{
+  width: 800px;
+  margin: 0px auto;
+}
+
+header{
+  width: 800px;
+  height: 60px;
+  overflow: hidden;
+  border: solid thin silver;
+  margin-bottom: 50px;
+}
+
+header > div{
+  width: 180px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 24px;
+  font-weight: bold;
+  color: silver;
+  text-align: center;
+  float :left;
+  border-right: solid thin silver;
+  cursor: pointer;
+}
+
+.active{
+  background-color: silver;
+  color: white;
+}
+
+section{
+  width: 300px;
+  height: 400px;
+  margin: 0px auto;
+  padding: 10px;
+  overflow: hidden;
+}
+
+section > input{
+  margin: 20px auto;
+  display: block;
+}
+
+section > div{
+  line-height: 50px;
+  font-size: 24px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+section .number{
+  width: 80px;
+  float: left;
+}
+
+section .name{
+  width: 160px;
+  float: left;
+}
+
+section .image{
+  width: 50px;
+  height: 50px;
+}
+
+.image{
+  width: 100px;
+  height: 100px;
+}
+
+.example-animate-container {
+  background:white;
+}
+.animate-repeat {
+  line-height:40px;
+  box-sizing:border-box;
+}
+.animate-repeat.ng-move,
+.animate-repeat.ng-enter,
+.animate-repeat.ng-leave {
+  -webkit-transition:all linear 0.5s;
+  transition:all linear 0.5s;
+}
+.animate-repeat.ng-leave.ng-leave-active,
+.animate-repeat.ng-move,
+.animate-repeat.ng-enter {
+  opacity:0;
+  max-height:0;
+}
+.animate-repeat.ng-leave,
+.animate-repeat.ng-move.ng-move-active,
+.animate-repeat.ng-enter.ng-enter-active {
+  opacity:1;
+  max-height:40px;
+}

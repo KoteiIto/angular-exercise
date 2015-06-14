@@ -9,9 +9,11 @@ myApp.controller("ParentController", function($scope){
   $scope.change = function(){
     index = (index + 1) % 2;
     $scope.foo = strings[index];
-
-    $scope.$broadcast("changeFoo",strings[index]);
   }
+
+  $scope.$watch("foo", function(){
+    $scope.$broadcast("changeFoo",$scope.foo);
+  });
 
 });
 

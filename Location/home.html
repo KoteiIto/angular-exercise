@@ -1,0 +1,12 @@
+<section class="example-animate-container" ng-controller="SearchController">
+  <input type="search" ng-model="keyword.name">
+  <div class="animate-repeat" ng-repeat="item in items | filter:keyword" ng-click="showDetail(item)">
+    <div class="number">
+      {{$index + 1}}
+    </div>
+    <div class="name">
+      {{item.name}}
+    </div>
+    <img class="image" ng-src="{{item.url}}" alt="image">
+  </div>
+</section>
